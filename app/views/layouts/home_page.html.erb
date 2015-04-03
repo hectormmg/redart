@@ -1,0 +1,20 @@
+<DOCTYPE! <!DOCTYPE html>
+<html class="grayscale-bg">
+<head>
+	<title></title>
+	<%= stylesheet_link_tag 'home_page', media: 'all',
+										 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+</head>
+<body>
+	<%= render 'layouts/home_header' %>
+	<%= yield %>
+	<%= render 'layouts/home_footer' %>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("html").removeClass("grayscale-bg");
+		});
+	</script>
+</body>
+</html>

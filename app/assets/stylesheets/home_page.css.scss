@@ -1,0 +1,19 @@
+// Place all the styles related to the HomePage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html{
+	background-image: url('cover.jpg');
+	height: 100%;
+	background-size: cover;
+	display: flex;
+	flex-direction: colum;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition: all 5000ms;
+}
+
+.grayscale-bg{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
