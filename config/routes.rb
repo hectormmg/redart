@@ -1,4 +1,30 @@
 Rails.application.routes.draw do
+  get 'news_pages/front'
+
+  get 'news_pages/arte'
+
+  get 'news_pages/economia'
+
+  get 'news_pages/salud'
+
+  get 'news_pages/sociedad'
+
+  get 'news_pages/politica'
+
+  get 'news_pages/internacional'
+
+  get 'news_pages/ciencia'
+
+  get 'news_pages/deportes'
+
+  get 'news_pages/historia'
+
+  get 'news_pages/novedades'
+
+  get 'news_pages/gastronomia'
+
+  get 'news_pages/galeria'
+
   root 'home_page#landing'
 
   get 'home_page/signup'
