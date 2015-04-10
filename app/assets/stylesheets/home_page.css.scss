@@ -1,9 +1,12 @@
 // Place all the styles related to the HomePage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* Bootstrap Import */
+
+@import 'furatto_overrides';
 
 html{
-	background-image: image-url('cover.jpg');
+	background-image: image-url('bg_prehome.jpg');
 	height: 100%;
 	background-size: cover;
 	display: flex;
@@ -13,13 +16,36 @@ html{
 	-webkit-transition: all 10000ms;
 }
 
+
 .grayscale-bg {
 	-webkit-filter: grayscale(100%); 
 	filter: grayscale(100%);
 }
 
-.navbar-landing {
+body{
 	width: 100%;
-	height: 45px;
-	background-color: black;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.landing-nav {
+	width: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: right;
+}
+
+.navbar-form{
+	display: inline-block;
+}
+
+.navbar-form input{
+	border: 1px solid #eee;
+	border-radius: 3px;
+	height: 20px;
+}
+
+
+.navbar-form button{
 }
