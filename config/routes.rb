@@ -1,33 +1,60 @@
 Rails.application.routes.draw do
-  get 'news_pages/front'
+ 
+  get 'news_pages/home'
 
-  get 'news_pages/arte'
+  get 'news_pages/art'
 
-  get 'news_pages/economia'
+  get 'news_pages/economy'
 
-  get 'news_pages/salud'
+  get 'news_pages/health'
 
-  get 'news_pages/sociedad'
+  get 'news_pages/society'
 
-  get 'news_pages/politica'
+  get 'news_pages/politics'
 
-  get 'news_pages/internacional'
+  get 'news_pages/international'
 
-  get 'news_pages/ciencia'
+  get 'news_pages/science'
 
-  get 'news_pages/deportes'
+  get 'news_pages/sports'
 
-  get 'news_pages/historia'
+  get 'news_pages/history'
 
-  get 'news_pages/novedades'
+  get 'news_pages/novelty'
 
-  get 'news_pages/gastronomia'
+  get 'news_pages/gastronomy'
 
-  get 'news_pages/galeria'
+  get 'news_pages/gallery'
 
   root 'home_page#landing'
 
-  get 'home_page/signup'
+  get 'signup' => 'home_page#signup'
+  
+  get 'home' => "news_pages#home"
+
+  get 'art'   => "news_pages#art"
+
+  get 'economy' => "news_pages#economy"
+
+  get 'health' => "news_pages#health"
+
+  get 'society' => "news_pages#society"
+
+  get 'politics' => "news_pages#politics"
+
+  get 'international' => "news_pages#international"
+
+  get 'science' => "news_pages#science"
+
+  get 'sports' => "news_pages#sports"
+
+  get 'history' => "news_pages#history"
+
+  get 'novelty' => "news_pages#novelty"
+
+  get 'gastronomy' => "news_pages#gastronomy"
+
+  get 'gallery' => "news_pages#gallery"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

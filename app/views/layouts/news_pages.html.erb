@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<%= stylesheet_link_tag 'news_pages', media: 'all',
+										 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+</head>
+<body>
+	<%= render 'layouts/news_header' %>
+	<div class="row">
+			<div class="container news-container">
+				<%= render "layouts/news_navbar" %>
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+	<%= render 'layouts/news_footer' %>
+</body>
+</html>

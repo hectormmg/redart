@@ -1,0 +1,196 @@
+// Place all the styles related to the NewsPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the NewsPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Bootstrap Import */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Color vars */
+$silver: #BDC3C7;
+$emerald: #1ABC9C;
+$nephritis: #27ae60;
+$gold: #FFD700;
+$clouds: #ECF0F1;
+
+h1, h2, h3, p{
+	margin: 0 0 5px 0;
+}
+html{
+	height: 100vh;
+	padding: 0;
+}
+body{
+	height: 100%;
+	background: $silver;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-banner{
+	background: $emerald;
+	width: 100%;
+	height: 20%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+
+.navi{
+	color: white;
+	background: $nephritis;
+	width: 100%;
+	margin: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.navi ul{
+	list-style: none;
+	width: 100%;
+	margin-bottom: 0;
+	font-size: 0;
+	display: flex;
+}
+
+.navi li{
+	display: inline;
+  	padding: 5px 10px;
+  	padding-right: 0;
+  	padding-left: 0;
+  	margin-bottom: 0;
+  	font-size: 12px;
+  }
+
+.navi a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	padding: 5px 5px;
+	// border: 1px solid white;
+}
+
+.navi a:hover {
+	background: $emerald;
+}
+
+.logo-placehold{
+	color: white;
+	font-family: helvetica;
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+}
+
+.news-container{
+	width: 90%;
+	z-index: 1;
+	position: absolute;
+	margin-top: 60px;
+	margin-right: 0;
+	left: 5%;
+	padding: 0;
+	margin-left: 0;
+}
+
+.news-wrapper{
+	width: 100%;
+	background: white;
+	height: 100%;
+	margin: 0;
+	padding: 10px 40px;
+	clear: both;
+}
+
+.carousel-section p{
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+.home-carousel-title h1{
+	font-family: "Open-Sans";
+}
+
+.home-carousel-subtitle h3{
+	font-family: "Open-Sans";
+	font-size: 15px;
+	margin-top: -10px;
+}
+
+.home-top-title h3{
+	font-family: "Open-Sans";
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.top-preview{
+	background: $clouds;
+	margin-bottom: 30px;
+	padding: 10px 5px;
+}
+.top-row{
+	padding: 0;
+}
+
+.top-article{
+	padding: 3px;
+}
+
+.section-row{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: $emerald; //Change to section color
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+.section-row h2 {
+	color: $clouds; 
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+/* Carousel */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-height: 567px){
+	.nav-banner{
+		height: 40%;
+	}
+}
+@media screen and (max-height: 282px){
+	.nav-banner{
+		height: 60%;
+	}
+}
