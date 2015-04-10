@@ -9,14 +9,15 @@
 	  <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= render 'layouts/news_header' %>
-	<div class="row">
+	<div id = "site-wrapper">
+		<%= render 'layouts/news_header' %>
+		<div class="row">
 			<div class="container news-container">
 				<%= render "layouts/news_navbar" %>
 				<%= yield %>
+				<%= render 'layouts/news_footer' %>
 			</div>
 		</div>
 	</div>
-	<%= render 'layouts/news_footer' %>
 </body>
 </html>
