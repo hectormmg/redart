@@ -33,8 +33,7 @@ $body-background-color: none;
 /*$button-display: inline-block !default;*/
 /*$button-border-width: 1px !default;*/
 /*$button-border-style: solid !default;*/
-/*$button-default-background-color: #2E323E !default;*/
-
+$button-default-background-color: #575757;
 /*Buttons general styles*/
 /*$button-font-family: $base-font-family !default;*/
 /*$button-font-color: #FFF !default;*/
@@ -403,7 +402,7 @@ $navigation-bar-background: rgba(0, 0, 0, 0.4);
 
 /*Buttons settings*/
 /*$navigation-bar-button-font-size: $navigation-font-size !default;*/
-/*$navigation-bar-button-height: 35px !default;*/
+$navigation-bar-button-height: 32px;
 /*$navigation-bar-button-margin-left: px-to-rems(8) !default;*/
 /*$navigation-bar-button-margin-right: px-to-rems(8) !default;*/
 /*$navigation-bar-menu-color: #FFF !default;*/
