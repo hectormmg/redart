@@ -138,7 +138,16 @@ body{
 	margin-top: -10px;
 }
 
+.sidebar-title{
+	
+}
+
 .top-preview{
+	background: $clouds;
+	margin-bottom: 30px;
+	padding: 10px 5px;
+}
+.top-podcasts{
 	background: $clouds;
 	margin-bottom: 30px;
 	padding: 10px 5px;
@@ -160,7 +169,7 @@ body{
 }
 
 .section-row h2 {
-	color: $clouds; 
+	color: $clouds;
 	margin-left: 10px;
 	font-size: 15px;
 }
